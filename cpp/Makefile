@@ -9,6 +9,6 @@ main.o:
 a.o:
 	$(CXX) $(CXXFLAGS) -c src/a.cpp -o bin/a.o
 bin/:
-	@[ -d "bin" ] || mkdir -p bin
+	mkdir -p bin
 clean:
 	@rm -rf bin
