@@ -1,1 +1,24 @@
 #!/bin/bash
+
+# Check if boiler is installed
+if [ ! -d /usr/share/boiler ]; then
+    echo Are you sure boiler is installed?
+    echo
+    echo Install boiler with \'sudo make install\'
+    exit
+fi
+
+case "$@" in
+"c")
+    # C-Language boilerplate
+    cp -r /usr/share/boiler/c/* .
+    ;;
+"cpp" | "c++")
+    # C++-Language boilerplate
+    cp -r /usr/share/boiler/c/* .
+    cp -r /usr/share/cpp/* .
+    ;;
+*)
+    echo Usage: boiler [language]
+    ;;
+esac
