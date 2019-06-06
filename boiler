@@ -12,5 +12,5 @@ fi
 if [ ! -d $1 ]; then
     echo Usage: boiler [template]
 else
-    cp -r /usr/share/$1/* .
+    cp -r /usr/share/boiler/$1/* .
 fi
