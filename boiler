@@ -9,8 +9,8 @@ if [ ! -d /usr/share/boiler ]; then
 fi
 
 # Copy template, if it exists.
-if [ ! -d $1 ]; then
-    echo Usage: boiler [template]
-else
+if [ -d /usr/share/boiler/$1 ]; then
     cp -r /usr/share/boiler/$1/* .
+else
+    echo Usage: boiler [template]
 fi
