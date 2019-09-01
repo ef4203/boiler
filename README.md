@@ -43,9 +43,9 @@ git clone https://github.com/ef4203/boiler/ $env:USERPROFILE\AppData\Roaming\boi
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
 Unblock-File $env:USERPROFILE\AppData\Roaming\boiler\boiler.ps1
-
-$env:Path += $env:USERPROFILE\AppData\Roaming\boiler
 ```
+
+Now you can add the boiler directory to your path.
 
 ## Usage
 
