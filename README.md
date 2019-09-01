@@ -7,6 +7,7 @@ Collection of project templates and quick creation script
 - Installation: `make`, `git`
 - C: `cmake`, any cmake compatable C compiler (e.g. `gcc`)
 - C++: `cmake`, any cmake compatable C++ compiler (e.g. `g++`)
+- Latex: `make`, `pdflatex`
 - HTML: none
 
 ## Installation
@@ -32,7 +33,7 @@ You can now remove the boiler folder in your Download directory.
 
 ### On Windows systems
 
-**Method 1:** Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-on-server) an follow the steps described as for linux system.
+**Method 1:** Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-on-server) and follow the steps described as for linux system.
 
 **Method 2:** TBA.
 
