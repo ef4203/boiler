@@ -14,7 +14,7 @@ Collection of project templates and quick creation script
 
 ### On Linux or MacOS systems
 
-Verify that you have `make` and `git` installed and added your PATH.
+Verify that you have `make` and `git` installed and added to your PATH.
 
 Clone the repository into a temporary directory, (for example ~/Downloads)
 
@@ -33,9 +33,19 @@ You can now remove the boiler folder in your Download directory.
 
 ### On Windows systems
 
-**Method 1:** Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-on-server) and follow the steps described as for linux system.
+Verify that you have [git](https://gitforwindows.org/) installed and added to your Path.
 
-**Method 2:** TBA.
+Then run in a PowerShell:
+
+```ps
+git clone https://github.com/ef4203/boiler/ $env:USERPROFILE\AppData\Roaming\boiler
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+Unblock-File $env:USERPROFILE\AppData\Roaming\boiler\boiler.ps1
+
+$env:Path += $env:USERPROFILE\AppData\Roaming\boiler
+```
 
 ## Usage
 
